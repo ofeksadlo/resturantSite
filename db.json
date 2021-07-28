@@ -1,0 +1,54 @@
+{
+    "menu" : [
+        {
+            "id": 1,
+            "name": "גורמה סבזי",
+            "description": "אחת המנות הידועות ביותר של המטבח הפרסי ואולי אפילו מנת הדגל שלהם. מדובר בערמות ענק של ירק טרי מגוון החל מפטרוזליה דרך כוסברה נענע וכלה בתרד שטופים היטב וקצוצים",
+            "price": 30,
+            "price_member": 20,
+            "picture": "file:///C:/Restaurantly/assets/img/menu/sabzi.jpg",
+            "category": "Lunch",
+            "tag": "Spicey"
+        },
+        {
+            "id": 2,
+            "name": "סלימי",
+            "description": "הקבב המיוחד שלנו שעמוס בבצל טחון ומעט מאד תבלינים ובזה ייחודו",
+            "price": 20,
+            "price_member": 10,
+            "picture": "file:///C:/Restaurantly/assets/img/menu/salimi.jpg",
+            "category": "Lunch",
+            "tag": ""
+        },
+        {
+            "id": 3,
+            "name": "שמשירי",
+            "description": "גרגרים תפוחים לבנים פרודים היטב מקבלים אינסוף תוספות שהופכות אותם לאורזים מגוונים ונפלאים במקרה הספציפי הזה מדובר בזרשק דומדמניות מיובשות ומעט חמצמצות שמתבשלות כמה דקות במעט מי זעפרן",
+            "price": 25,
+            "price_member": 15,
+            "picture": "file:///C:/Restaurantly/assets/img/menu/samshiri.jpg",
+            "category": "Lunch",
+            "tag": ""
+        }
+    ],
+    "members": [
+        {
+            "id": 1,
+            "first_name": "אופק",
+            "last_name": "סדלובסקי",
+            "email": "ofeksadlo@gmail.com",
+            "password": "123456",
+            "isAdmin": 1
+        }
+    ],
+    "orders" : [
+        {
+            "order_id" : 1,
+            "client_name": "אופק סדלובסקי",
+            "client_address": "ירושלים 48 בת ים",
+            "totalPrice": 100,
+            "dishes": [1,2,2,2],
+            "status": "בהכנה"
+        }
+    ]
+}
