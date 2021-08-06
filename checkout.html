@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>תשלום הזמנה</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div id="contentDiv" style="display: none;" class="container">
+  <main>
+    <div id="successAlert" style="display: none;" class="alert alert-success" role="alert">
+        <h4 class="alert-heading">ההזמנה בוצעה!</h4>
+    </div>
+    <div class="py-5 text-center">
+      <h2>סיכום הזמנה</h2>
+      <p class="lead">הכנס פרטי תשלום ושלם על ההזמנה</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">העגלה שלך</span>
+        </h4>
+        <ul id="dishesList" class="list-group mb-3">
+        </ul>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">פרטי המזמין</h4>
+        <form name="orderForm" class="needs-validation" onsubmit="return commitOrder()" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">שם פרטי</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  נחוץ שם פרטי
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">שם משפחה</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  נחוץ שם משפחה
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="mb-3">
+              <label for="email">כתובת דואר</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                הכנס כתובת דואר אלקטרוני תקינה
+              </div>
+            </div>
+    
+            <div class="mb-3">
+              <label for="address">כתובת</label>
+              <input type="text" class="form-control" id="address" placeholder="הרצל 33 תל אביב" required="">
+              <div class="invalid-feedback">
+                הכנס כתובת תקינה
+              </div>
+            </div>
+    
+    
+            <hr class="mb-4">
+    
+            <h4 class="mb-3">תשלום</h4>
+    
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">כרטיס אשראי</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">מזומן</label>
+              </div>
+            </div>
+            <div id="creditCardDiv">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-name">שם בעל הכרטיס</label>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                      <small class="text-muted">שם מלא כמו בכרטיס</small>
+                      <div class="invalid-feedback">
+                        חובה שם בעל הכרטיס
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-number">מספר אשראי</label>
+                      <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        חובה מספר אשראי
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-expiration">תאריך תפוגה</label>
+                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        חובה תאריך תפוגה
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-cvv">3 ספרות</label>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        חובה להכניס 3 ספרות בגב הכרטיס
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">בצע הזמנה</button>
+          </form>
+      </div>
+    </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021</p>
+  </footer>
+</div>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+      <script src="assets/js/form-validation.js"></script>
+      <script src="assets/js/checkout.js"></script>
+  </body>
+</html>

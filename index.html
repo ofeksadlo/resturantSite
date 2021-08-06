@@ -1,0 +1,283 @@
+
+<html dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>מסעדה פרסית אותנטית</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet">
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+  
+   
+
+  <!-- =======================================================
+  * Template Name: Restaurantly - v1.2.1
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+<script src="assets/js/loadJson.js"></script>
+<script src="assets/js/validation.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex">
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">דף הבית</a></li>
+          <li><a href="orders.html">נהל הזמנות</a></li>
+          <li><a href="#">נהל משתמשים</a></li>
+          <li id="logoutLink"></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 id="welcome-header">ברוך הבא למסעדה הפרסית <span>האותנטית</span></h1>
+          <h2>מגוון אוכל פרסי כשר למהדרין</h2>
+
+          <div class="btns">
+            <a id="logInLink" href="#myModal" data-toggle="modal" class="btn-menu animated fadeInUp scrollto">התחבר כחבר מועדון</a>
+            <a href="#main" class="btn-book animated fadeInUp scrollto">בצע הזמנה</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    
+    <!-- Login Modal HTML -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="avatar">
+              <img src="assets/img/avatar.png" alt="Avatar">
+            </div>				
+            <h4 class="modal-title">התחברות</h4>	
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form name="loginForm" onsubmit="return validateUser()" method="post">
+              <div class="form-group">
+                <input style="direction: rtl !important;" type="email" class="form-control" name="email" placeholder="כתובת דואר אלקטרוני" required="required">		
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="סיסמא" required="required">	
+              </div>        
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">התחבר</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#">אין משתמש? לחץ כאן להרשמה</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="updateDishModal" role="dialog" aria-labelledby="updateDishModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div style="background: rgba(0,0,0,.5);" tabindex="-1" class="modal-content">
+          <form name="updateDishForm" method="post">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateDishModal">עריכת מנה</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="form-group">
+                <label for="dish_name" class="col-form-label">שם המנה:</label>
+                <input type="text" class="form-control" id="dish_name">
+              </div>
+              <div class="form-group">
+                <label for="dish_description" class="col-form-label">תיאור המנה:</label>
+                <textarea class="form-control" id="dish_description"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="dish_cost" class="col-form-label">מחיר המנה:</label>
+                <input type="text" class="form-control" id="dish_cost">
+              </div>
+              <div class="form-group">
+                <label for="dish_cost" class="col-form-label">מחיר מועדון:</label>
+                <input type="text" class="form-control" id="dish_member_cost">
+              </div>
+              <div class="form-group">
+                <label for="dish_picture" class="col-form-label">תמונה:</label>
+                <input type="text" class="form-control" id="dish_picture">
+              </div>
+              <div class="form-group">
+                <label for="dish_category" class="col-form-label">קטגוריה:</label>
+                <input type="text" class="form-control" id="dish_category">
+              </div>
+              <div class="form-group">
+                <label for="dish_tag" class="col-form-label">תווית:</label>
+                <input type="text" class="form-control" id="dish_tag">
+              </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">סגור</button>
+            <button id="submitDishBtn" type="submit" class="btn btn-primary">עדכן</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+    <div class="modal fade" id="addToCartModal" role="dialog" aria-labelledby="addToCartModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div style="background: rgba(0,0,0,.5);" tabindex="-1" class="modal-content">
+                      <form name="updateShopCartForm" method="post">
+          <div class="modal-header">
+            <h5 class="modal-title" id="dishNameHeader">הנך מוסיף להזמנה </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+              <div class="form-group">
+                <label for="dish_name" class="col-form-label">כמות: </label>
+                <div class="input-group">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          -
+                      </button>
+                  </span>
+                  <input id="quantityTxt" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                          +
+                      </button>
+                  </span>
+              </div>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">סגור</button>
+            <button id="addToCartBtn" type="submit" class="btn btn-primary">הוסף</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/increasment.js"></script>
+
+
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>תפריט</h2>
+          <p>בחר מנות</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">הכל</li>
+              <li data-filter=".filter-starters">צהריים</li>
+              <li data-filter=".filter-salads">סלטים</li>
+              <li data-filter=".filter-specialty">קינוחים</li>
+            </ul>
+          </div>
+        </div>
+        
+        <a id="addDish" href="javascript:showDishModal(0);" style="display: none;">הוסף<img src="assets/img/plus.png" width="2%"></a>
+          <div id="menu-items" class="row menu-container" data-aos="fade-up" data-aos-delay="200"></div>
+
+        </div>
+        
+
+      </div>
+    </section><!-- End Menu Section -->
+
+
+
+
+
+  </main><!-- End #main -->
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><img src="assets/img/cart.png" width="10%"></a>
+
+ <!-- Template Main JS File -->
+ <script src="assets/js/main.js"></script>
+ 
+
+</body>
+
+</html>

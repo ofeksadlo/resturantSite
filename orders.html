@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>ניהול הזמנות</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div id="contentDiv" class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>ניהול הזמנות</h2>
+      <p class="lead">הצגה וניהול של ההזמנות הקיימות</p>
+    </div>
+
+
+
+
+    <div class="modal fade" id="updateOrderModal" role="dialog" aria-labelledby="updateOrderModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div tabindex="-1" class="modal-content">
+                            <form name="updateOrderForm" method="post">
+            <div class="modal-header">
+              <h5 class="modal-title" id="updateOrderModal">עריכת הזמנה</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                <div class="form-group">
+                  <label for="client_name" class="col-form-label">שם הלקוח:</label>
+                  <input type="text" class="form-control" id="client_name">
+                </div>
+                <div class="form-group">
+                  <label for="client_address" class="col-form-label">כתובת:</label>
+                  <input type="text" class="form-control" id="client_address"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="totalPrice" class="col-form-label">מחיר:</label>
+                  <input type="text" class="form-control" id="totalPrice">
+                </div>
+                <div class="form-group">
+                  <label for="status" class="col-form-label">סטאטוס:</label>
+                  <input type="text" class="form-control" id="status">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">סגור</button>
+              <button id="submitDishBtn" type="submit" class="btn btn-primary">עדכן</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <table cellspacing="0" cellpadding="0" class="table">
+        <thead>
+            <tr>
+                <th>שם לקוח</th>
+                <th>כתובת למשלוח</th>
+                <th>מחיר</th>
+                <th>סטאטוס</th>
+                <th>עדכן</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+        
+  </main>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021</p>
+  </footer>
+</div>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/orders.js"></script>
+  </body>
+</html>

@@ -6,7 +6,7 @@
             "description": "אחת המנות הידועות ביותר של המטבח הפרסי ואולי אפילו מנת הדגל שלהם. מדובר בערמות ענק של ירק טרי מגוון החל מפטרוזליה דרך כוסברה נענע וכלה בתרד שטופים היטב וקצוצים",
             "price": 30,
             "price_member": 20,
-            "picture": "file:///C:/Restaurantly/assets/img/menu/sabzi.jpg",
+            "picture": "sabzi.jpg",
             "category": "Lunch",
             "tag": "Spicey"
         },
@@ -16,7 +16,7 @@
             "description": "הקבב המיוחד שלנו שעמוס בבצל טחון ומעט מאד תבלינים ובזה ייחודו",
             "price": 20,
             "price_member": 10,
-            "picture": "file:///C:/Restaurantly/assets/img/menu/salimi.jpg",
+            "picture": "salimi.jpg",
             "category": "Lunch",
             "tag": ""
         },
@@ -26,7 +26,7 @@
             "description": "גרגרים תפוחים לבנים פרודים היטב מקבלים אינסוף תוספות שהופכות אותם לאורזים מגוונים ונפלאים במקרה הספציפי הזה מדובר בזרשק דומדמניות מיובשות ומעט חמצמצות שמתבשלות כמה דקות במעט מי זעפרן",
             "price": 25,
             "price_member": 15,
-            "picture": "file:///C:/Restaurantly/assets/img/menu/samshiri.jpg",
+            "picture": "samshiri.jpg",
             "category": "Lunch",
             "tag": ""
         }
